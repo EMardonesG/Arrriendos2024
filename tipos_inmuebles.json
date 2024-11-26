@@ -1,0 +1,24 @@
+[
+    {
+      "model": "gestion_inmuebles.tipoinmueble",
+      "pk": 1,
+      "fields": {
+        "tipo_inmueble": "Casa"
+      }
+    },
+    {
+      "model": "gestion_inmuebles.tipoinmueble",
+      "pk": 2,
+      "fields": {
+        "tipo_inmueble": "Departamento"
+      }
+    },
+    {
+      "model": "gestion_inmuebles.tipoinmueble",
+      "pk": 3,
+      "fields": {
+        "tipo_inmueble": "Parcela"
+      }
+    }
+  ]
+  

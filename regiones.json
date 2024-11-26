@@ -1,0 +1,86 @@
+[
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "region": "Arica y Parinacota"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 2,
+        "fields": {
+            "region": "Tarapacá"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 3,
+        "fields": {
+            "region": "Antofagasta"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 4,
+        "fields": {
+            "region": "Atacama"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 5,
+        "fields": {
+            "region": "Coquimbo"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 6,
+        "fields": {
+            "region": "Valparaíso"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 7,
+        "fields": {
+            "region": "O'Higgins"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 8,
+        "fields": {
+            "region": "Maule"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 9,
+        "fields": {
+            "region": "Ñuble"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 10,
+        "fields": {
+            "region": "Biobío"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 11,
+        "fields": {
+            "region": "La Araucanía"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.region",
+        "pk": 12,
+        "fields": {
+            "region": "Los Lagos"
+        }
+    }
+]

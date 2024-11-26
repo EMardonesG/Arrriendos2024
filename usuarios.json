@@ -1,0 +1,58 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "juanperez",
+            "password": "password123",
+            "first_name": "Juan",
+            "last_name": "Pérez",
+            "email": "juan.perez@mail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-01-01T12:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "carloslopez",
+            "password": "password123",
+            "first_name": "Carlos",
+            "last_name": "López",
+            "email": "carlos.lopez@mail.com",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2024-01-02T12:00:00Z"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.perfilusuario",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "tipo_usuario": 2, 
+            "nombre": "Juan",
+            "apellido": "Pérez",
+            "rut": "12345678-9",
+            "direccion": "Calle Falsa 123",
+            "telefono": "123456789",
+            "correo": "juan.perez@mail.com"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.perfilusuario",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "tipo_usuario": 2,  
+            "nombre": "Carlos",
+            "apellido": "López",
+            "rut": "98765432-1",
+            "direccion": "Avenida Siempre Viva 456",
+            "telefono": "987654321",
+            "correo": "carlos.lopez@mail.com"
+        }
+    }
+]

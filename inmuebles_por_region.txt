@@ -1,0 +1,14 @@
+RegiÃ³n: Arica y Parinacota
+  Comuna: Arica
+    Nombre Inmueble: Inmueble de Juan
+    DescripciÃ³n: Casa grande con jardín
+----------------------------------------
+
+================================================================================
+RegiÃ³n: Tarapacá
+  Comuna: Iquique
+    Nombre Inmueble: Inmueble de Carlos
+    DescripciÃ³n: Departamento moderno en el centro
+----------------------------------------
+
+================================================================================

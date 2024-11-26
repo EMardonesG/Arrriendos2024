@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-light mb-4">Actualizar Propiedad</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <!-- Tipo de Inmueble -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.tipo_inmueble.id_for_label }}" class="form-label">Tipo de Inmueble</label>
+                    <input type="text" name="{{ form.tipo_inmueble.name }}" class="form-control" id="{{ form.tipo_inmueble.id_for_label }}" value="{{ form.tipo_inmueble.value }}" /> <!-- Manually applying form-control class -->
+                </div>
+
+                <!-- Comuna -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.comuna.id_for_label }}" class="form-label">Comuna</label>
+                    <select name="{{ form.comuna.name }}" class="form-control" id="{{ form.comuna.id_for_label }}">
+                        {% for choice in form.comuna.field.choices %}
+                            <option value="{{ choice.0 }}" {% if form.comuna.value == choice.0 %}selected{% endif %}>{{ choice.1 }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <!-- Región -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.region.id_for_label }}" class="form-label">Región</label>
+                    <input type="text" name="{{ form.region.name }}" class="form-control" id="{{ form.region.id_for_label }}" value="{{ form.region.value }}" />
+                </div>
+
+                <!-- Nombre del Inmueble -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.nombre_inmueble.id_for_label }}" class="form-label">Nombre del Inmueble</label>
+                    <input type="text" name="{{ form.nombre_inmueble.name }}" class="form-control" id="{{ form.nombre_inmueble.id_for_label }}" value="{{ form.nombre_inmueble.value }}" />
+                </div>
+
+                <!-- Descripción -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.descripcion.id_for_label }}" class="form-label">Descripción</label>
+                    <textarea name="{{ form.descripcion.name }}" class="form-control" id="{{ form.descripcion.id_for_label }}">{{ form.descripcion.value }}</textarea>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <!-- Metros Cuadrados Construidos -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.m2_construido.id_for_label }}" class="form-label">Metros Cuadrados Construidos</label>
+                    <input type="text" name="{{ form.m2_construido.name }}" class="form-control" id="{{ form.m2_construido.id_for_label }}" value="{{ form.m2_construido.value }}" />
+                </div>
+
+                <!-- Número de Baños -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.numero_banos.id_for_label }}" class="form-label">Número de Baños</label>
+                    <input type="text" name="{{ form.numero_banos.name }}" class="form-control" id="{{ form.numero_banos.id_for_label }}" value="{{ form.numero_banos.value }}" />
+                </div>
+
+                <!-- Número de Habitaciones -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.numero_hab.id_for_label }}" class="form-label">Número de Habitaciones</label>
+                    <input type="text" name="{{ form.numero_hab.name }}" class="form-control" id="{{ form.numero_hab.id_for_label }}" value="{{ form.numero_hab.value }}" />
+                </div>
+
+                <!-- Dirección -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.direccion.id_for_label }}" class="form-label">Dirección</label>
+                    <input type="text" name="{{ form.direccion.name }}" class="form-control" id="{{ form.direccion.id_for_label }}" value="{{ form.direccion.value }}" />
+                </div>
+
+                <!-- Número de Estacionamientos -->
+                <div class="form-group mb-3">
+                    <label for="{{ form.precio.id_for_label }}" class="form-label">Precio</label>
+                    <input type="text" name="{{ form.precio.name }}" class="form-control" id="{{ form.precio.id_for_label }}" value="{{ form.precio.value }}" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Número de Estacionamientos -->
+        <div class="form-group mb-3">
+            <label for="{{ form.numero_estacionam.id_for_label }}" class="form-label">Número de Estacionamientos</label>
+            <input type="text" name="{{ form.numero_estacionam.name }}" class="form-control" id="{{ form.numero_estacionam.id_for_label }}" value="{{ form.numero_estacionam.value }}" />
+        </div>
+    </div>
+</div>
+
+        <!-- Image Field -->
+        <div class="form-group mb-3">
+            <label for="{{ form.image.id_for_label }}" class="form-label">Imagen</label>
+            <input type="file" name="{{ form.image.name }}" class="form-control-file" id="{{ form.image.id_for_label }}" />
+            {% if inmueble.image %}
+                <div class="mt-3">
+                    <strong>Imagen actual:</strong>
+                    <img src="{{ inmueble.image.url }}" alt="Imagen actual del inmueble" class="img-fluid" style="max-width: 300px; max-height: 200px;">
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group text-center mt-4">
+            <button type="submit" class="btn btn-primary">Actualizar</button>
+        </div>
+    </form>
+
+    <!-- Back Button -->
+    <div class="text-center mt-3">
+        <a href="{% url 'dashboard' %}" class="btn btn-secondary">Volver al Dashboard</a>
+    </div>
+</div>
+{% endblock %}

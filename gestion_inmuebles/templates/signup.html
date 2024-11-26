@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+{% block title %}Crear Cuenta{% endblock %}
+
+{% block content %}
+<section class="rounded">
+    <div class="mt-4 container">
+        <h2 class="text-center">Crear una cuenta</h2>
+        <p class="text-center">Regístrate para acceder a nuestras funcionalidades.</p>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-6">
+                <div class="bg-dark rounded shadow-sm overflow-hidden">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="row gy-3 p-4">
+                            <!-- User Authentication Section -->
+                            <h3 class="text-center">Autenticación</h3>
+
+                            <!-- Username Field -->
+                            <div class="col-12">
+                                <label for="id_username" class="form-label text-white">Nombre de Usuario <span class="text-danger">*</span></label>
+                                {{ form.username|add_class:"form-control" }}
+                            </div>
+
+                            <!-- Password Fields -->
+                            <div class="col-12">
+                                <label for="id_password1" class="form-label text-white">Contraseña <span class="text-danger">*</span></label>
+                                {{ form.password1|add_class:"form-control" }}
+                            </div>
+
+                            <div class="col-12">
+                                <label for="id_password2" class="form-label text-white">Repite tu contraseña <span class="text-danger">*</span></label>
+                                {{ form.password2|add_class:"form-control" }}
+                            </div>
+
+                            <!-- Personal Information Section -->
+                            <h3 class="text-center mt-5">Información Personal</h3>
+
+                            <!-- First Name Field (Nombre) -->
+                            <div class="col-12">
+                                <label for="id_nombre" class="form-label text-white">Nombre <span class="text-danger">*</span></label>
+                                {{ form.nombre|add_class:"form-control" }}
+                            </div>
+                            
+                            <!-- Last Name Field (Apellido) -->
+                            <div class="col-12">
+                                <label for="id_apellido" class="form-label text-white">Apellido <span class="text-danger">*</span></label>
+                                {{ form.apellido|add_class:"form-control" }}
+                            </div>
+                            
+                            <!-- RUT Field -->
+                            <div class="col-12">
+                                <label for="id_rut" class="form-label text-white">RUT <span class="text-danger">*</span></label>
+                                {{ form.rut|add_class:"form-control" }}
+                            </div>
+
+                            <!-- Address Field -->
+                            <div class="col-12">
+                                <label for="id_direccion" class="form-label text-white">Dirección <span class="text-danger">*</span></label>
+                                {{ form.direccion|add_class:"form-control" }}
+                            </div>
+
+                            <!-- Phone Field -->
+                            <div class="col-12">
+                                <label for="id_telefono" class="form-label text-white">Teléfono Personal <span class="text-danger">*</span></label>
+                                {{ form.telefono|add_class:"form-control" }}
+                            </div>
+
+                            <div class="col-12">
+                                <label for="id_correo" class="form-label text-white">Correo Electrónico <span class="text-danger">*</span></label>
+                                {{ form.correo|add_class:"form-control" }}
+                            </div>
+                            
+
+                            <!-- User Type Field -->
+                            <div class="col-12">
+                                <label for="id_tipo_usuario" class="form-label text-white">Tipo de Usuario <span class="text-danger">*</span></label>
+                                {{ form.tipo_usuario|add_class:"form-control" }}
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="col-12">
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-secondary btn-lg">Registrarse</button>
+                                </div>
+                            </div>
+
+                            <!-- Already Have an Account -->
+                            <p class="text-center mt-5 mb-0">¿Ya tienes una cuenta? <a href="/login" class="fw-bold text-light"><u>Inicia sesión aquí</u></a></p>
+
+                            <!-- Display Form Validation Errors -->
+                            {% if form.errors %}
+                                <ul class="text-danger">
+                                    {% for field in form %}
+                                        {% for error in field.errors %}
+                                            <li>{{ error }}</li>
+                                        {% endfor %}
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+
+                            {% if messages %}
+                                <ul class="text-danger">
+                                    {% for message in messages %}
+                                        <li>{{ message }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,98 @@
+[
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 1,
+        "fields": {
+            "comuna": "Arica",
+            "region": 1
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 2,
+        "fields": {
+            "comuna": "Iquique",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 3,
+        "fields": {
+            "comuna": "Antofagasta",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 4,
+        "fields": {
+            "comuna": "Copiapó",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 5,
+        "fields": {
+            "comuna": "La Serena",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 6,
+        "fields": {
+            "comuna": "Valparaíso",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 7,
+        "fields": {
+            "comuna": "Rancagua",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 8,
+        "fields": {
+            "comuna": "Talca",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 9,
+        "fields": {
+            "comuna": "Chillán",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 10,
+        "fields": {
+            "comuna": "Concepción",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 11,
+        "fields": {
+            "comuna": "Temuco",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion_inmuebles.comuna",
+        "pk": 12,
+        "fields": {
+            "comuna": "Puerto Montt",
+            "region": 12
+        }
+    }
+]

@@ -1,0 +1,4 @@
+Comuna: Arica
+Nombre Inmueble: Inmueble de Juan
+DescripciÃ³n: Casa grande con jardín
+----------------------------------------

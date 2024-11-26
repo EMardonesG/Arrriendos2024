@@ -1,0 +1,16 @@
+[
+    {
+        "model": "gestion_inmuebles.tipousuario",
+        "pk": 1,
+        "fields": {
+            "tipo_usuario": "arrendatario"
+        }
+    },
+    {
+        "model": "gestion_inmuebles.tipousuario",
+        "pk": 2,
+        "fields": {
+            "tipo_usuario": "arrendador"
+        }
+    }
+]

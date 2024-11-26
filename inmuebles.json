@@ -1,0 +1,38 @@
+[
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 1,
+    "fields": {
+      "propietario": 1,
+      "tipo_inmueble": 1,
+      "comuna": 1,
+      "region": 1,
+      "nombre_inmueble": "Inmueble de Juan",
+      "descripcion": "Casa grande con jardín",
+      "m2_construido": 120.0,
+      "numero_banos": 2,
+      "numero_hab": 3,
+      "direccion": "Calle Falsa 123, Santiago",
+      "numero_estacionam": 1,
+      "fecha_publicacion": "2024-11-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "gestion_inmuebles.inmueble",
+    "pk": 2,
+    "fields": {
+      "propietario": 2,
+      "tipo_inmueble": 2,
+      "comuna": 2,
+      "region": 2,
+      "nombre_inmueble": "Inmueble de Carlos",
+      "descripcion": "Departamento moderno en el centro",
+      "m2_construido": 80.0,
+      "numero_banos": 1,
+      "numero_hab": 2,
+      "direccion": "Avenida Siempre Viva 456, Valparaíso",
+      "numero_estacionam": 1,
+      "fecha_publicacion": "2024-11-10T15:00:00Z"
+    }
+  }
+]
