@@ -1,0 +1,70 @@
+.logo img {
+    max-width: 20rem; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    padding-left: 0 !important; /* Already specified in your inline styles */
+    padding-right: 0 !important; /* Already specified in your inline styles */
+   
+}
+/* 
+.header-custom {
+    background-color: rgb(6, 183, 236) !important;
+} */
+
+
+ /* .custom-black-navbar {
+    background-color:#212529 !important;
+} */
+
+
+/* .custom-black-navbar .nav-link {
+    color: rgb(196, 195, 206) !important; 
+} */
+
+.custom-black-navbar .nav-link:hover {
+    color: #2bdfffbe !important;
+} 
+
+.custom-body {
+    background-color: #000000 !important; 
+    color: rgb(218, 218, 218) !important; 
+}
+
+
+.custom-image {
+    max-width: 30rem !important; 
+    height: auto;   
+   
+}
+
+
+.dropdown-item:active,
+.dropdown-item:focus {
+    background-color: #6c757d !important; 
+    color: white !important; 
+}
+
+
+/* Remove resize handle from all textareas */
+textarea.form-control {
+    min-height: 120px;  /* This controls the minimum height */
+    height: auto;       /* Ensures dynamic height if the content grows */
+    resize: vertical;   /* Allow resizing vertically */
+}
+
+/* Specific styles for the input fields */
+.form-control {
+    width: 100%;         /* Make sure the input takes up 100% of the container */
+    height: 40px;        /* Set a fixed height for regular inputs */
+    resize: none;        /* Disable resizing for other inputs (e.g., text input, email input) */
+    padding: 10px;       /* Add padding for text clarity */
+}
+
+/* Optionally, you can add some padding to ensure text doesn't look cramped */
+.form-control {
+    padding: 10px;
+}
